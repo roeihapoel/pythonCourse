@@ -1,0 +1,76 @@
+PRINT h:
+Dan Hotel has: 2/4 occupied rooms.
+------------------
+Drinks - (coke, lemonade). Snacks - (bamba, mars). No bill yet.
+PRINT h:
+Dan Hotel has: 2/4 occupied rooms.
+------------------
+CALL: h.upgrade("Liat")
+Minibar: Drinks - (coke, lemonade). Snacks - (bamba, mars). No bill yet.
+Floor: 15.
+Number: 140.
+Guests: liat.
+Clean level: 5.
+Is suite: True.
+Satisfaction: 0.55.
+------------------
+CALL: h.check_out("Ronen")
+Minibar: Drinks - (coke, lemonade). Snacks - (bamba, mars). No bill yet.
+Floor: 12.
+Number: 101.
+Guests: empty.
+Clean level: 6.
+Is suite: True.
+Satisfaction: 0.5.
+------------------
+CALL: h.check_out("Ronen")
+None
+------------------
+CALL: h.check_in(["Alice", "Wonder"], True)
+Minibar: Drinks - (coke, lemonade). Snacks - (bamba, mars). No bill yet.
+Floor: 2.
+Number: 23.
+Guests: alice, wonder.
+Clean level: 6.
+Is suite: True.
+Satisfaction: 0.5.
+------------------
+CALL: h.check_in(["Alex"], True)
+Minibar: Drinks - (coke, lemonade). Snacks - (bamba, mars). No bill yet.
+Floor: 12.
+Number: 101.
+Guests: alex.
+Clean level: 6.
+Is suite: True.
+Satisfaction: 0.5.
+------------------
+PRINT h:
+Dan Hotel has: 3/4 occupied rooms.
+------------------
+CALL: h.check_in(["Oded", "Shani"], False)
+Minibar: Drinks - (coke, lemonade). Snacks - (bamba, mars). No bill yet.
+Floor: 1.
+Number: 2.
+Guests: oded, shani.
+Clean level: 7.
+Is suite: False.
+Satisfaction: 0.5.
+------------------
+CALL: h.check_in(["Oded", "Shani"], False)
+None
+------------------
+CALL: h.check_out("Liat")
+Minibar: Drinks - (coke, lemonade). Snacks - (bamba, mars). No bill yet.
+Floor: 15.
+Number: 140.
+Guests: empty.
+Clean level: 5.
+Is suite: True.
+Satisfaction: 0.55.
+------------------
+CALL: h.check_out("Liat")
+None
+------------------
+PRINT h:
+Dan Hotel has: 3/4 occupied rooms.
+------------------
